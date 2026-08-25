@@ -5,21 +5,21 @@
 class Treesync < Formula
   desc "Live-sync a git worktree's changes into another worktree on a detached HEAD"
   homepage "https://github.com/rcwsr/treesync"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rcwsr/treesync/releases/download/v0.0.2/treesync_0.0.2_darwin_amd64.tar.gz"
-      sha256 "8da284d556516265a54e173c6cca665a47bb7ccc42cf20ecb8af82f7e4fc56f9"
+      url "https://github.com/rcwsr/treesync/releases/download/v0.0.3/treesync_0.0.3_darwin_amd64.tar.gz"
+      sha256 "d5cf282efb736bf0e76203aab926f2230944003529f0710d3ec04e79579e4c71"
 
       define_method(:install) do
         bin.install "treesync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rcwsr/treesync/releases/download/v0.0.2/treesync_0.0.2_darwin_arm64.tar.gz"
-      sha256 "d9c5abddfbc43859bc1674365212be5a102daad9f23ff31fbd89b19dece1d033"
+      url "https://github.com/rcwsr/treesync/releases/download/v0.0.3/treesync_0.0.3_darwin_arm64.tar.gz"
+      sha256 "a488067166095c632d875f97242dbd2db70ad54d07edd4de55e692095bbcef7f"
 
       define_method(:install) do
         bin.install "treesync"
@@ -29,15 +29,15 @@ class Treesync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rcwsr/treesync/releases/download/v0.0.2/treesync_0.0.2_linux_amd64.tar.gz"
-      sha256 "0fbabf3aa42facb55ebaf319b363ce2750c2b08f6aa1e15653b72f871f1df045"
+      url "https://github.com/rcwsr/treesync/releases/download/v0.0.3/treesync_0.0.3_linux_amd64.tar.gz"
+      sha256 "5cc25b602b53f52eb1fe4c54a57f8be0da60b562a2dfbfaa58441c63f5d4a2c1"
       define_method(:install) do
         bin.install "treesync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rcwsr/treesync/releases/download/v0.0.2/treesync_0.0.2_linux_arm64.tar.gz"
-      sha256 "39d4ee0780b581ab7a6dcb6e2676e5fc84a05f4bd8da3a81c219435a610a9f36"
+      url "https://github.com/rcwsr/treesync/releases/download/v0.0.3/treesync_0.0.3_linux_arm64.tar.gz"
+      sha256 "aa8c09130930081ff32a9219911461ae61fc828e9c5963e92410f53e7d7efe66"
       define_method(:install) do
         bin.install "treesync"
       end
